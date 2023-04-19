@@ -6,6 +6,7 @@ import readlineSync from 'readline-sync'
 let user = ''
 let currentUserAnswer = ''
 let correctAnswers = 0
+let correctAnswer = 0
 
 showMessage('Welcome to the Brain Games!')
 const getUserName = () => {
@@ -14,36 +15,42 @@ const getUserName = () => {
   return (user = userName)
 }
 getUserName()
-showMessage("Answer 'yes' if number even otherwise answer 'no'.")
+showMessage('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 const getRandomNumber = () => {
   return Math.round(Math.random() * 100)
 }
 
-const isEven = (number) => {
-  return number % 2 === 0
+function isPrime(num) {
+  if (num < 2) {
+    return false
+  }
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      return false
+    }
+  }
+  return true
 }
 
-const evenQuestion = (number) => {
-  console.log(`Is ${number} even?`)
-  const expectedAnswer = isEven(number) ? 'yes' : 'no'
+const primeQuestion = (number) => {
+  showMessage(`Question: ${number}`)
+  correctAnswer = isPrime(number) ? 'yes' : 'no'
   const userAnswer = readlineSync
     .question(`Your answer is: `)
     .trim()
     .toLowerCase()
   currentUserAnswer = userAnswer
-  return expectedAnswer === userAnswer
+  return correctAnswer === userAnswer
 }
 
 while (correctAnswers < ROUNDS_COUNT) {
-  if (evenQuestion(getRandomNumber())) {
+  if (primeQuestion(getRandomNumber())) {
     showMessage('Correct!')
     correctAnswers++
   } else {
     console.log(
-      `'${currentUserAnswer}' is wrong answer ;(. Correct answer was '${
-        currentUserAnswer === 'yes' ? 'no' : 'yes'
-      }'`
+      `'${currentUserAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`
     )
     console.log("Let's try again, " + user + '!')
     break
