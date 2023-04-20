@@ -1,5 +1,5 @@
-export const ROUNDS_COUNT = 3
+export const ROUNDS_COUNT = 3;
 
 export function showMessage(message) {
-  return console.log(message)
+  return console.log(message);
 }
