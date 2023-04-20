@@ -29,15 +29,17 @@ const getNewExpression = () => {
 const evaluateResult = (expression) => {
   const [operand1, operator, operand2] = expression.split(" ");
   let result;
+  const num1 = +operand1;
+  const num2 = +operand2;
   switch (operator) {
     case "+":
-      result = operand1 + operand2;
+      result = num1 + num2;
       break;
     case "-":
-      result = operand1 - operand2;
+      result = num1 - num2;
       break;
     case "*":
-      result = operand1 * operand2;
+      result = num1 * num2;
       break;
     default:
       throw new Error("Unsupported operator");
