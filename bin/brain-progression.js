@@ -22,7 +22,7 @@ showMessage("What number is missing in the progression?");
 
 function generateFakeProgression() {
   fakeProgression = [...progression];
-  progressionElementIndex = Math.floor(Math.random() * 10);
+  progressionElementIndex = Math.floor(Math.random() * 9);
   fakeProgression[progressionElementIndex] = "..";
   return fakeProgression.join(" ");
 }
