@@ -14,7 +14,7 @@ const getUserName = () => {
   return (user = userName)
 }
 getUserName()
-showMessage("Answer 'yes' if number even otherwise answer 'no'.")
+showMessage('Answer "yes" if the number is even, otherwise answer "no".')
 
 const getRandomNumber = () => {
   return Math.round(Math.random() * 100)
