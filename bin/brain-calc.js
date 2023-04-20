@@ -1,33 +1,48 @@
 #!/usr/bin/env node
 
-import { showMessage, ROUNDS_COUNT } from '../src/index.js';
-import readlineSync from 'readline-sync';
+import readlineSync from "readline-sync";
+import { showMessage, ROUNDS_COUNT } from "../src/index.js";
 
-let user = '';
-let currentUserAnswer = '';
+let user = "";
+let currentUserAnswer = "";
 let correctAnswers = 0;
 let correctAnswer = 0;
 
-showMessage('Welcome to the Brain Games!');
+showMessage("Welcome to the Brain Games!");
 const getUserName = () => {
-  const userName = readlineSync.question('May I have your name? ');
+  const userName = readlineSync.question("May I have your name? ");
   console.log(`Hello, ${userName}`);
-  return (user = userName);
+  user = userName;
 };
 getUserName();
-showMessage('What is the result of the expression?');
+showMessage("What is the result of the expression?");
 
-const getRandomNumbers = () => {
-  const signs = ['+', '-', '*'];
-  return (
-    Math.round(Math.random() * 100) +
-    ` ${signs[Math.floor(Math.random() * 3)]} ` +
-    Math.round(Math.random() * 100)
-  );
+const getNewExpression = () => {
+  const signs = ["+", "-", "*"];
+  const num1 = Math.round(Math.random() * 100);
+  const num2 = Math.round(Math.random() * 100);
+  const sign = signs[Math.floor(Math.random() * 3)];
+  const newExpression = `${num1} ${sign} ${num2}`;
+  return newExpression;
 };
 
 const evaluateResult = (expression) => {
-  return eval(expression);
+  const [operand1, operator, operand2] = expression.split(" ");
+  let result;
+  switch (operator) {
+    case "+":
+      result = operand1 + operand2;
+      break;
+    case "-":
+      result = operand1 - operand2;
+      break;
+    case "*":
+      result = operand1 * operand2;
+      break;
+    default:
+      throw new Error("Unsupported operator");
+  }
+  return result;
 };
 
 const summQuestion = (expression) => {
@@ -41,18 +56,18 @@ const summQuestion = (expression) => {
 };
 
 while (correctAnswers < ROUNDS_COUNT) {
-  if (summQuestion(getRandomNumbers())) {
-    showMessage('Correct!');
-    correctAnswers++;
+  if (summQuestion(getNewExpression())) {
+    showMessage("Correct!");
+    correctAnswers += 1;
   } else {
     console.log(
       `'${currentUserAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`
     );
-    console.log("Let's try again, " + user + '!');
+    console.log(`Let's try again, ${user}!`);
     break;
   }
 }
 
 if (correctAnswers === ROUNDS_COUNT) {
-  console.log('Congratulations, ' + user + '!');
+  console.log(`Congratulations, ${user}!`);
 }
