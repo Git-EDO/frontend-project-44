@@ -25,12 +25,9 @@ const isEven = (number) => {
 }
 
 const evenQuestion = (number) => {
-  console.log(`Is ${number} even?`)
+  console.log(`Question: `, number)
   const expectedAnswer = isEven(number) ? 'yes' : 'no'
-  const userAnswer = readlineSync
-    .question(`Your answer is: `)
-    .trim()
-    .toLowerCase()
+  const userAnswer = readlineSync.question(`Your answer: `).trim().toLowerCase()
   currentUserAnswer = userAnswer
   return expectedAnswer === userAnswer
 }
