@@ -43,7 +43,7 @@ const progressionQuestion = (numbers) => {
   showMessage(`Question: ${fakeProgression.join(' ')}`);
   correctAnswer = Number(numbers[progressionElementIndex]);
   const userAnswer = Number(
-    readlineSync.question(`Your answer is: `).trim().toLowerCase(),
+    readlineSync.question('Your answer is: ').trim().toLowerCase(),
   );
   currentUserAnswer = Number(userAnswer);
   return correctAnswer === userAnswer;

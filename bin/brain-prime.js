@@ -35,7 +35,7 @@ const primeQuestion = (number) => {
   showMessage(`Question: ${number}`);
   correctAnswer = isPrime(number) ? 'yes' : 'no';
   const userAnswer = readlineSync
-    .question(`Your answer is: `)
+    .question('Your answer is: ')
     .trim()
     .toLowerCase();
   currentUserAnswer = userAnswer;

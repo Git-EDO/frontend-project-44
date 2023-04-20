@@ -24,7 +24,7 @@ const evenQuestion = (number) => {
   console.log(`Question: ${number}`);
   const expectedAnswer = isEven(number) ? 'yes' : 'no';
   const userAnswer = readlineSync
-    .question(`Your answer: `)
+    .question('Your answer: ')
     .trim()
     .toLowerCase();
   currentUserAnswer = userAnswer;
