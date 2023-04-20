@@ -1,24 +1,24 @@
 #!/usr/bin/env node
 
-import readlineSync from "readline-sync";
-import { showMessage, ROUNDS_COUNT } from "../src/index.js";
+import readlineSync from 'readline-sync';
+import { showMessage, ROUNDS_COUNT } from '../src/index.js';
 
-let user = "";
-let currentUserAnswer = "";
+let user = '';
+let currentUserAnswer = '';
 let correctAnswers = 0;
 let correctAnswer = 0;
 
-showMessage("Welcome to the Brain Games!");
+showMessage('Welcome to the Brain Games!');
 const getUserName = () => {
-  const userName = readlineSync.question("May I have your name? ");
+  const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}`);
   user = userName;
 };
 getUserName();
-showMessage("What is the result of the expression?");
+showMessage('What is the result of the expression?');
 
 const getNewExpression = () => {
-  const signs = ["+", "-", "*"];
+  const signs = ['+', '-', '*'];
   const num1 = Math.round(Math.random() * 100);
   const num2 = Math.round(Math.random() * 100);
   const sign = signs[Math.floor(Math.random() * 3)];
@@ -27,22 +27,22 @@ const getNewExpression = () => {
 };
 
 const evaluateResult = (expression) => {
-  const [operand1, operator, operand2] = expression.split(" ");
+  const [operand1, operator, operand2] = expression.split(' ');
   let result;
   const num1 = +operand1;
   const num2 = +operand2;
   switch (operator) {
-    case "+":
+    case '+':
       result = num1 + num2;
       break;
-    case "-":
+    case '-':
       result = num1 - num2;
       break;
-    case "*":
+    case '*':
       result = num1 * num2;
       break;
     default:
-      throw new Error("Unsupported operator");
+      throw new Error('Unsupported operator');
   }
   return result;
 };
@@ -59,7 +59,7 @@ const summQuestion = (expression) => {
 
 while (correctAnswers < ROUNDS_COUNT) {
   if (summQuestion(getNewExpression())) {
-    showMessage("Correct!");
+    showMessage('Correct!');
     correctAnswers += 1;
   } else {
     console.log(

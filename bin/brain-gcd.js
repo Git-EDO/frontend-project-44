@@ -1,21 +1,21 @@
 #!/usr/bin/env node
 
-import readlineSync from "readline-sync";
-import { showMessage, ROUNDS_COUNT } from "../src/index.js";
+import readlineSync from 'readline-sync';
+import { showMessage, ROUNDS_COUNT } from '../src/index.js';
 
-let user = "";
-let currentUserAnswer = "";
+let user = '';
+let currentUserAnswer = '';
 let correctAnswers = 0;
 let correctAnswer = 0;
 
-showMessage("Welcome to the Brain Games!");
+showMessage('Welcome to the Brain Games!');
 const getUserName = () => {
-  const userName = readlineSync.question("May I have your name? ");
+  const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}`);
   user = userName;
 };
 getUserName();
-showMessage("Find the greatest common divisor of given numbers.");
+showMessage('Find the greatest common divisor of given numbers.');
 
 function getRandomNumber() {
   return Math.floor(Math.random() * 100) + 1;
@@ -44,7 +44,7 @@ const gcdQuestion = (num1, num2) => {
 
 while (correctAnswers < ROUNDS_COUNT) {
   if (gcdQuestion(getRandomNumber(), getRandomNumber())) {
-    showMessage("Correct!");
+    showMessage('Correct!');
     correctAnswers += 1;
   } else {
     console.log(

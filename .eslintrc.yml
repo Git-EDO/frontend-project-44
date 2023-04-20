@@ -7,18 +7,19 @@ env:
   node: true
 
 extends:
-  - 'airbnb-base'
-  - 'plugin:jest/recommended'
-  - 'eslint:recommended'
-  - 'plugin:prettier/recommended'
+  - "airbnb-base"
+  - "plugin:jest/recommended"
+  - "eslint:recommended"
+  - "plugin:prettier/recommended"
 
 parserOptions:
   ecmaVersion: latest
 
 rules:
+  quotes: [error, single]
   no-console: 0
   import/extensions:
     - error
     - ignorePackages
     - js: always
-  no-underscore-dangle: [2, { 'allow': ['__filename', '__dirname'] }]
+  no-underscore-dangle: [2, { "allow": ["__filename", "__dirname"] }]
