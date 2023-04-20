@@ -31,7 +31,7 @@ function findGCD(num1, num2) {
 }
 
 const gcdQuestion = (num1, num2) => {
-  showMessage(`Question: ${num1}, ${num2}`)
+  showMessage(`Question: ${num1} ${num2}`)
   correctAnswer = Number(findGCD(num1, num2))
   const userAnswer = Number(
     readlineSync.question(`Your answer is: `).trim().toLowerCase()
