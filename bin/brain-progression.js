@@ -63,5 +63,5 @@ while (correctAnswers < ROUNDS_COUNT) {
 }
 
 if (correctAnswers === ROUNDS_COUNT) {
-  console.log('Congratulations, ' + user)
+  console.log('Congratulations, ' + user + '!')
 }
