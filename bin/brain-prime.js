@@ -17,9 +17,7 @@ const getUserName = () => {
 getUserName();
 showMessage('Answer "yes" if given number is prime. Otherwise answer "no".');
 
-const getRandomNumber = () => {
-  return Math.round(Math.random() * 100);
-};
+const getRandomNumber = () => Math.round(Math.random() * 100);
 
 function isPrime(num) {
   if (num < 2) {
@@ -50,7 +48,7 @@ while (correctAnswers < ROUNDS_COUNT) {
     correctAnswers += 1;
   } else {
     console.log(
-      `'${currentUserAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`
+      `'${currentUserAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`,
     );
     console.log(`Let's try again, ${user}!`);
     break;

@@ -51,7 +51,7 @@ const summQuestion = (expression) => {
   showMessage(`Question: ${expression}`);
   correctAnswer = Number(evaluateResult(expression));
   const userAnswer = Number(
-    readlineSync.question(`Your answer is: `).trim().toLowerCase()
+    readlineSync.question(`Your answer is: `).trim().toLowerCase(),
   );
   currentUserAnswer = Number(userAnswer);
   return correctAnswer === userAnswer;
@@ -63,7 +63,7 @@ while (correctAnswers < ROUNDS_COUNT) {
     correctAnswers += 1;
   } else {
     console.log(
-      `'${currentUserAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`
+      `'${currentUserAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`,
     );
     console.log(`Let's try again, ${user}!`);
     break;

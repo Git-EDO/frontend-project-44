@@ -16,13 +16,9 @@ const getUserName = () => {
 getUserName();
 showMessage('Answer "yes" if the number is even, otherwise answer "no".');
 
-const getRandomNumber = () => {
-  return Math.round(Math.random() * 100);
-};
+const getRandomNumber = () => Math.round(Math.random() * 100);
 
-const isEven = (number) => {
-  return number % 2 === 0;
-};
+const isEven = (number) => number % 2 === 0;
 
 const evenQuestion = (number) => {
   console.log(`Question: ${number}`);
@@ -43,7 +39,7 @@ while (correctAnswers < ROUNDS_COUNT) {
     console.log(
       `'${currentUserAnswer}' is wrong answer ;(. Correct answer was '${
         currentUserAnswer === 'yes' ? 'no' : 'yes'
-      }'`
+      }'`,
     );
     console.log(`Let's try again, ${user}!`);
     break;
