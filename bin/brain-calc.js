@@ -31,7 +31,7 @@ const evaluateResult = (expression) => {
 }
 
 const summQuestion = (expression) => {
-  showMessage(expression)
+  showMessage(`Question: ${expression}`)
   correctAnswer = Number(evaluateResult(expression))
   const userAnswer = Number(
     readlineSync.question(`Your answer is: `).trim().toLowerCase()
