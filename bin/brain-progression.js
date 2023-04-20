@@ -40,7 +40,7 @@ function generateFakeProgression() {
 }
 
 const progressionQuestion = (numbers) => {
-  showMessage(`Question: ${fakeProgression}`)
+  showMessage(`Question: ${fakeProgression.join(' ')}`)
   correctAnswer = Number(numbers[progressionElementIndex])
   const userAnswer = Number(
     readlineSync.question(`Your answer is: `).trim().toLowerCase()
