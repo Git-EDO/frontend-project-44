@@ -1,23 +1,21 @@
 #!/usr/bin/env node
 
 import readlineSync from 'readline-sync';
-import { showMessage, ROUNDS_COUNT } from '../src/index.js';
+import {
+  showMessage,
+  ROUNDS_COUNT,
+  getUserName,
+  USER_NAME,
+} from '../src/index.js';
 
-let user = '';
 let currentUserAnswer = '';
 let correctAnswers = 0;
 
 showMessage('Welcome to the Brain Games!');
-const getUserName = () => {
-  const userName = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${userName}`);
-  user = userName;
-};
 getUserName();
 showMessage('Answer "yes" if the number is even, otherwise answer "no".');
 
 const getRandomNumber = () => Math.round(Math.random() * 100);
-
 const isEven = (number) => number % 2 === 0;
 
 const evenQuestion = (number) => {
@@ -41,11 +39,11 @@ while (correctAnswers < ROUNDS_COUNT) {
         currentUserAnswer === 'yes' ? 'no' : 'yes'
       }'`,
     );
-    console.log(`Let's try again, ${user}!`);
+    console.log(`Let's try again, ${USER_NAME}!`);
     break;
   }
 }
 
 if (correctAnswers === ROUNDS_COUNT) {
-  console.log(`Congratulations, ${user}!`);
+  console.log(`Congratulations, ${USER_NAME}!`);
 }
