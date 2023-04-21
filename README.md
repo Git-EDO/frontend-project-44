@@ -13,7 +13,7 @@
 ## How to start the project
 
 - _**git clone URL-OF-REPO**_ to copy the repository to your computer
-- _**make install**_ to intall all dependencies
+- _**make install**_ to install all dependencies
 
 ## How to play
 
