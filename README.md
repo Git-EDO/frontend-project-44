@@ -4,9 +4,11 @@
 
 # Hexlet@Frontend project №1. "Brain-games"
 
-*A collection of 5 math games that you can play in the terminal*
-*You must answer 3 questions correctly in each game to win.*
-*Incorrect answer ends the game*
+## Description
+
+- *A collection of 5 math games that you can play in the terminal*
+- *You must answer 3 questions correctly in each game to win.*
+- *Incorrect answer ends the game*
 
 ## How to start the project
 
