@@ -6,9 +6,9 @@
 
 *A collection of 5 math games that you can play in the terminal*
 
-## Start the project
+## To start the project
 
-- _git clone_ to clone repo at your machine
-- _make install_ to intall all dependencies
+- *_git clone_* to clone repo at your machine
+- *_make install_* to intall all dependencies
 
 
