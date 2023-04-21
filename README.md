@@ -33,6 +33,6 @@
 ![Alt instruction_image](assets/brain-prime-image.png)
 
 - _**brain-progression**_ to run a game to determine the missing number in progression
-(/assets/brain-progression-image.png)
+![Alt instruction_image](/assets/brain-progression-image.png)
 
 
