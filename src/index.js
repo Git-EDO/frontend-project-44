@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 export const ROUNDS_COUNT = 3;
-export let USER_NAME;
+let USER_NAME;
 
 export function showMessage(message) {
   return console.log(message);
@@ -12,3 +12,5 @@ export function getUserName() {
   console.log(`Hello, ${userName}`);
   USER_NAME = userName;
 }
+
+export const getName = () => USER_NAME;

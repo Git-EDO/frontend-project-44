@@ -5,7 +5,7 @@ import {
   showMessage,
   ROUNDS_COUNT,
   getUserName,
-  USER_NAME,
+  getName,
 } from '../src/index.js';
 
 let currentUserAnswer = '';
@@ -64,11 +64,11 @@ while (correctAnswers < ROUNDS_COUNT) {
     console.log(
       `'${currentUserAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`,
     );
-    console.log(`Let's try again, ${USER_NAME}!`);
+    console.log(`Let's try again, ${getName()}!`);
     break;
   }
 }
 
 if (correctAnswers === ROUNDS_COUNT) {
-  console.log(`Congratulations, ${USER_NAME}!`);
+  console.log(`Congratulations, ${getName()}!`);
 }
