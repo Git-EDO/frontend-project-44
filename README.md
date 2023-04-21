@@ -12,7 +12,7 @@
 
 ## How to start the project
 
-- _**git clone URL-OF-REPO**_ to clone repo at your machine
+- _**git clone URL-OF-REPO**_ to copy the repository to your computer
 - _**make install**_ to intall all dependencies
 
 ## How to play
