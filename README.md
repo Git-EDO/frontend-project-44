@@ -8,7 +8,7 @@
 
 ## To start the project
 
-- *_git clone_* to clone repo at your machine
-- *_make install_* to intall all dependencies
+- _**git clone**_ to clone repo at your machine
+- _**make install**_ to intall all dependencies
 
 
