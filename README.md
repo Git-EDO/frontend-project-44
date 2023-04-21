@@ -18,21 +18,27 @@
 ## How to play
 
 - _**brain-games**_ to start test the programm
+
 ![Alt instruction_image](assets/brain-games-image.png)
 
 - _**brain-even**_ to run a game to determine the parity of a number (is number even or not)
+
 ![Alt instruction_image](assets/brain-even-image.png)
 
 - _**brain-calc**_ to run a game to calculate an expression from two numbers
+
 ![Alt instruction_image](assets/brain-calc-image.png)
 
 - _**brain-gcd**_ to run a game to calculate the greatest common divisor of two numbers
+
 ![Alt instruction_image](assets/brain-gcd-image.png)
 
 - _**brain-prime**_ to run a game to determine if a number is prime
+
 ![Alt instruction_image](assets/brain-prime-image.png)
 
 - _**brain-progression**_ to run a game to determine the missing number in progression
+
 ![Alt instruction_image](/assets/brain-progression-image.png)
 
 
