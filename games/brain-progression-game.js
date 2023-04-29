@@ -2,8 +2,7 @@ let progression = [];
 let fakeProgression = [];
 let progressionElementIndex = 0;
 
-export const gameRules =
-  'Answer "yes" if given number is prime. Otherwise answer "no".';
+export const gameRules = 'What number is missing in the progression?';
 
 export function generateFakeProgression() {
   fakeProgression = [...progression];
