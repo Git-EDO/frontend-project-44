@@ -21,7 +21,7 @@
 
 ![brain-games-image](https://user-images.githubusercontent.com/107861036/235464132-857b59a7-8b04-40b3-a92d-0f5c4774e558.png)
 
-- _**brain-even**_ to run a game to determine the parity of a number (is number even or not)
+- _**brain-even**_ to run a game to determine the parity of a number (is number even or not) [link to video tutorial](https://asciinema.org/a/0pjwzqUOBZZVrJYsF4XeTWbCZ)
 
 ![brain-even-image](https://user-images.githubusercontent.com/107861036/235464158-02affd7a-a9fd-4128-87aa-9394762f0f62.png)
 
