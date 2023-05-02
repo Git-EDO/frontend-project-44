@@ -21,10 +21,10 @@ function generateNewProgression(number, increment) {
 
 function getRound() {
   const randomNumber = getRandomNumber(1, 100);
-  const randomIncrement = getRandomNumber(1, 9);
+  const randomIncrement = getRandomNumber(1, 10);
   const trueProgression = generateNewProgression(randomNumber, randomIncrement);
 
-  const randomProgressionIndexToHide = getRandomNumber(1, 10);
+  const randomProgressionIndexToHide = getRandomNumber(1, 9);
   const fakeProgression = generateFakeProgression(trueProgression, randomProgressionIndexToHide);
 
   const question = fakeProgression.join(' ');
