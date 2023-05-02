@@ -21,7 +21,10 @@ function runGame(rules, getRound) {
       console.log(`Let's try again, ${userName}!`);
       break;
     }
-    roundsCount === 2 && console.log(`Congratulations, ${userName}!`);
+
+    if (roundsCount === 2) {
+      console.log(`Congratulations, ${userName}!`);
+    }
   }
 }
 

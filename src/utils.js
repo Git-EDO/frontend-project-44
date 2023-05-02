@@ -1,7 +1,7 @@
 function getRandomNumber(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min)) + min;
+  minimum = Math.ceil(min);
+  maximum = Math.floor(max);
+  return Math.floor(Math.random() * (maximum - minimum)) + minimum;
 }
 
 export default getRandomNumber;

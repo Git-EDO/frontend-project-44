@@ -10,16 +10,17 @@ function generateFakeProgression(progression, index) {
 }
 
 function generateNewProgression(number, increment) {
-  let progression = [];
+  const progression = [];
+  let num = number;
   for (let i = 0; i < 9; i += 1) {
-    progression.push(number);
-    number += increment;
+    progression.push(num);
+    num += increment;
   }
   return progression;
 }
 
 function getRound() {
-  let randomNumber = getRandomNumber(1, 100);
+  const randomNumber = getRandomNumber(1, 100);
   const randomIncrement = getRandomNumber(1, 10);
   const trueProgression = generateNewProgression(randomNumber, randomIncrement);
 
