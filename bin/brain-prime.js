@@ -1,10 +1,5 @@
 #!/usr/bin/env node
 
-import {
-  gameRules,
-  generateNewQuestion,
-  generateCorrectAnswer,
-} from '../games/brain-prime-game.js';
-import runGame from '../src/index.js';
+import startPrimeGame from '../src/games/brainPrimeGame.js';
 
-runGame(gameRules, generateNewQuestion, generateCorrectAnswer);
+startPrimeGame();

@@ -1,44 +1,27 @@
 import readlineSync from 'readline-sync';
-import { showMessage, ROUNDS_COUNT } from './utils.js';
 
-function runGame(rules, newQuestion, newCorrectAnswer) {
-  showMessage('Welcome to the Brain Games!');
+function runGame(rules, getRound) {
+  console.log('Welcome to the Brain Games!');
 
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}`);
 
-  showMessage(rules);
+  console.log(rules);
 
-  let currentUserAnswer = '';
-  let correctAnswersCount = 0;
-  let correctAnswer = 0;
+  for (let roundsCount = 0; roundsCount < 3; roundsCount += 1) {
+    const newRound = getRound();
+    console.log(`Question: ${newRound[0]}`);
+    const userAnswer = readlineSync.question('Your answer is: ').trim().toLowerCase();
+    const correctAnswer = newRound[1];
 
-  function askQuestion(question) {
-    showMessage(`Question: ${question}`);
-    correctAnswer = String(newCorrectAnswer(question));
-    const userAnswer = readlineSync
-      .question('Your answer is: ')
-      .trim()
-      .toLowerCase();
-    currentUserAnswer = userAnswer;
-    return correctAnswer === userAnswer;
-  }
-
-  while (correctAnswersCount < ROUNDS_COUNT) {
-    if (askQuestion(newQuestion())) {
-      showMessage('Correct!');
-      correctAnswersCount += 1;
+    if (userAnswer === String(correctAnswer)) {
+      console.log('Correct!');
     } else {
-      console.log(
-        `'${currentUserAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`,
-      );
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'`);
       console.log(`Let's try again, ${userName}!`);
       break;
     }
-  }
-
-  if (correctAnswersCount === 3) {
-    console.log(`Congratulations, ${userName}!`);
+    roundsCount === 2 && console.log(`Congratulations, ${userName}!`);
   }
 }
 

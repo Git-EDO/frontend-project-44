@@ -1,10 +1,5 @@
 #!/usr/bin/env node
 
-import {
-  gameRules,
-  generateNewQuestion,
-  generateCorrectAnswer,
-} from '../games/brain-gcd-game.js';
-import runGame from '../src/index.js';
+import startGCDGame from '../src/games/brainGcdGame.js';
 
-runGame(gameRules, generateNewQuestion, generateCorrectAnswer);
+startGCDGame();
