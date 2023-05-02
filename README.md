@@ -17,7 +17,7 @@
 
 ## How to play
 
-- _**brain-games**_ to start test the programm ![link to video tutorial](https://asciinema.org/a/wriOxruyVu8w2F3erM3pGd2sO)
+- _**brain-games**_ to start test the programm [link to video tutorial](https://asciinema.org/a/wriOxruyVu8w2F3erM3pGd2sO)
 
 ![brain-games-image](https://user-images.githubusercontent.com/107861036/235464132-857b59a7-8b04-40b3-a92d-0f5c4774e558.png)
 
