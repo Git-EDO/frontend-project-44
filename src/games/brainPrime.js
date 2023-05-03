@@ -22,8 +22,6 @@ const getRound = () => {
   return [question, answer];
 };
 
-const startPrimeGame = () => {
-  return runGame(gameRules, getRound);
-};
+const startPrimeGame = () => runGame(gameRules, getRound);
 
 export default startPrimeGame;

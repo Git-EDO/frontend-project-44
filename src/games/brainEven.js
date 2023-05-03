@@ -11,8 +11,6 @@ const getRound = () => {
   return [question, answer];
 };
 
-const startEvenGame = () => {
-  return runGame(gameRules, getRound);
-};
+const startEvenGame = () => runGame(gameRules, getRound);
 
 export default startEvenGame;

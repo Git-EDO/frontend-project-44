@@ -28,8 +28,6 @@ const getRound = () => {
   return [question, answer];
 };
 
-const startProgressionGame = () => {
-  return runGame(gameRules, getRound);
-};
+const startProgressionGame = () => runGame(gameRules, getRound);
 
 export default startProgressionGame;

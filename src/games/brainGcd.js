@@ -24,8 +24,6 @@ const getRound = () => {
   return [question, answer];
 };
 
-const startGCDGame = () => {
-  return runGame(gameRules, getRound);
-};
+const startGCDGame = () => runGame(gameRules, getRound);
 
 export default startGCDGame;

@@ -27,8 +27,6 @@ const getRound = () => {
   return [question, answer];
 };
 
-const startCalcGame = () => {
-  return runGame(gameRules, getRound);
-};
+const startCalcGame = () => runGame(gameRules, getRound);
 
 export default startCalcGame;
