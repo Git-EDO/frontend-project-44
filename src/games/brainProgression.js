@@ -3,7 +3,7 @@ import runGame from '../index.js';
 
 const gameRules = 'What number is missing in the progression?';
 
-function generateNewProgression(number, increment, maxLength) {
+const generateNewProgression = (number, increment, maxLength) => {
   const progression = [];
   let num = number;
   for (let i = 0; i < maxLength; i += 1) {
@@ -11,9 +11,9 @@ function generateNewProgression(number, increment, maxLength) {
     num += increment;
   }
   return progression;
-}
+};
 
-function getRound() {
+const getRound = () => {
   const randomNumber = getRandomNumber(1, 100);
   const randomIncrement = getRandomNumber(1, 10);
   const progressionLength = 9;
@@ -26,10 +26,10 @@ function getRound() {
   const question = fakeProgression.join(' ');
   const answer = String(trueProgression[randomProgressionIndexToHide]);
   return [question, answer];
-}
+};
 
-function startProgressionGame() {
+const startProgressionGame = () => {
   return runGame(gameRules, getRound);
-}
+};
 
 export default startProgressionGame;
