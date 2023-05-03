@@ -19,7 +19,7 @@ function getRound() {
   const number2 = getRandomNumber(1, 100);
 
   const question = [number1, number2].join(' ');
-  const answer = calculateGCD(number1, number2);
+  const answer = String(calculateGCD(number1, number2));
 
   return [question, answer];
 }
