@@ -17,14 +17,13 @@ const getRound = () => {
   const randomNumber = getRandomNumber(1, 100);
   const randomIncrement = getRandomNumber(1, 10);
   const progressionLength = 9;
-  const trueProgression = generateNewProgression(randomNumber, randomIncrement, progressionLength);
+  const progression = generateNewProgression(randomNumber, randomIncrement, progressionLength);
 
-  const randomProgressionIndexToHide = getRandomNumber(1, progressionLength);
-  const fakeProgression = [...trueProgression];
-  fakeProgression[randomProgressionIndexToHide] = '..';
+  const hiddenIndex = getRandomNumber(0, progressionLength - 1);
+  const answer = String(progression[hiddenIndex]);
 
-  const question = fakeProgression.join(' ');
-  const answer = String(trueProgression[randomProgressionIndexToHide]);
+  progression[hiddenIndex] = '..';
+  const question = progression.join(' ');
   return [question, answer];
 };
 
