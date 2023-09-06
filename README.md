@@ -12,14 +12,15 @@
 
 ## How to start the project
 
-- _**git clone URL-OF-REPO**_ to copy the repository to your computer
+- _**git clone [URL-OF-REPO](https://github.com/Git-EDO/frontend-project-44.git)**_ to copy the repository to your computer
 - _**make install**_ to install all dependencies
+- **sudo npm link** to make symbolic link
 
 ## How to play
 
-- _**brain-games**_ to start test the programm 
+- _**brain-games**_ to start the programm and get welcome message 
 
-[![asciicast](https://asciinema.org/a/wriOxruyVu8w2F3erM3pGd2sO.svg)](https://asciinema.org/a/wriOxruyVu8w2F3erM3pGd2sO)
+[![asciicast](https://asciinema.org/a/MfZhvcxOkDVPTtgnB4IKwCpwE.svg)](https://asciinema.org/a/MfZhvcxOkDVPTtgnB4IKwCpwE)
 
 - _**brain-even**_ to run a game to determine the parity of a number (is number even or not) 
 
