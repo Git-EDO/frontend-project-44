@@ -24,20 +24,20 @@
 
 - _**brain-even**_ to run a game to determine the parity of a number (is number even or not) 
 
-[![asciicast](https://asciinema.org/a/K5zkjD5iJuT5KcwyAsoIhn4eN.svg)](https://asciinema.org/a/K5zkjD5iJuT5KcwyAsoIhn4eN)
+[![asciicast](https://asciinema.org/a/H7EyVdpDUtgTdE6p35vFmdKNf.svg)](https://asciinema.org/a/H7EyVdpDUtgTdE6p35vFmdKNf)
 
 - _**brain-calc**_ to run a game to calculate an expression from two numbers 
 
-[![asciicast](https://asciinema.org/a/0pjwzqUOBZZVrJYsF4XeTWbCZ.svg)](https://asciinema.org/a/0pjwzqUOBZZVrJYsF4XeTWbCZ)
+[![asciicast](https://asciinema.org/a/tzSzVhW00m6wEF5ggofIICZZH.svg)](https://asciinema.org/a/tzSzVhW00m6wEF5ggofIICZZH)
 
 - _**brain-gcd**_ to run a game to calculate the greatest common divisor of two numbers 
 
-[![asciicast](https://asciinema.org/a/bBkGqkpv9Cw5XyAHh3lyhvX18.svg)](https://asciinema.org/a/bBkGqkpv9Cw5XyAHh3lyhvX18)
+[![asciicast](https://asciinema.org/a/L9Xq15oy8bXTdDqwHP834QOPb.svg)](https://asciinema.org/a/L9Xq15oy8bXTdDqwHP834QOPb)
 
 - _**brain-prime**_ to run a game to determine if a number is prime 
 
-[![asciicast](https://asciinema.org/a/vW2byv8BHzApLAKxr4c7kqMWp.svg)](https://asciinema.org/a/vW2byv8BHzApLAKxr4c7kqMWp)
+[![asciicast](https://asciinema.org/a/fxobNPwW1sElL9gdJrHKImJip.svg)](https://asciinema.org/a/fxobNPwW1sElL9gdJrHKImJip)
 
 - _**brain-progression**_ to run a game to determine the missing number in progression
 
-[![asciicast](https://asciinema.org/a/uhR777pBVBqsB7YngGnKriDDG.svg)](https://asciinema.org/a/uhR777pBVBqsB7YngGnKriDDG)
+[![asciicast](https://asciinema.org/a/Ho1oIOzJ3GQzAfeFNnN386EqN.svg)](https://asciinema.org/a/Ho1oIOzJ3GQzAfeFNnN386EqN)
